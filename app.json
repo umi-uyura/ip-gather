@@ -1,0 +1,21 @@
+{
+  "name": "IP Gather",
+  "description": "Site to collect the IP address.",
+  "keywords": [
+    "node",
+    "express",
+    "heroku"
+  ],
+  "addons": [
+    "sendgrid:starter"
+  ],
+  "env": {
+    "NOTIFY_EMAIL_TO": { "value": "", "required": false },
+    "NOTIFY_EMAIL_FROM": "noreplay@example.com",
+    "NOTIFY_EMAIL_SUBJECT": "IP Gather Notification Mail",
+    "BASIC_AUTH_USER": { "value": "", "required": false },
+    "BASIC_AUTH_PASS": { "value": "", "required": false },
+    "GOOGLEANALYTICS_TRACKINGID": { "value": "", "required": false },
+    "TZ": { "value": "Asia/Tokyo", "required": false }
+  }
+}
